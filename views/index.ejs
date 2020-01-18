@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <title>BikeShop - Home</title>
+    <script src="https://kit.fontawesome.com/a41e9403cf.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <div class="row">
+
+            <nav class="col-12 navbar navbar-light bg-dark">
+                <a class="navbar" href="/index">
+                <img src="images/bike-logo.svg" width="50" height="50" class="logo" alt="">
+                    The Bike Shop Experience
+                </a>
+                <a href="/shop-main"><button class="btn btn-outline-info btn-sm text-right basket-icon"><i class="fas fa-shopping-basket"></i><a onclick="alert('Vous etes alerté');">Alertez-moi</a></button></a>
+            </nav>
+        
+        </div>
+
+            
+       <!-- JUMBOTRON -->
+       <div class="row">
+            <div class="col-12 jumbotron jumbotron-fluid">
+                <div class="container">        
+                </div>
+            </div>
+       </div>
+
+       <!-- Go to Basket -->
+           <div class="icon text-right">
+            
+           </div>
+    
+ 
+        <!-- CARD -->
+        <div class="row">
+        <%for(var i=0; i<dataBike.length; i++) {%>        
+            <div class="col-xs-12 col-sm-6 col-md-4 card">
+            <img src=<%=dataBike[i].url%> class="card-img-top">
+                <div class="card-body text-center">
+                <h5 class="card-title text-center"><%=dataBike[i].name%></h5>
+                <span class="bike-price"><%=dataBike[i].price%>€</span>   
+                
+                <a href="/shop?name=<%=dataBike[i].name%>&url=<%=dataBike[i].url%>&price=<%=dataBike[i].price%>" class="btn btn-outline-info btn-sm offset-1">Buy</a>   
+                <!-- create a pop-up        -->
+                <div id="modal-area">
+                    <div class="modal-content">
+                        <h3>Modal title</h3>
+                        <p>bla bla bla</p>
+                    </div>
+                </div>
+                <!-- end of div pop-up -->
+            </div>
+            </div> 
+        <%
+        }
+        %>
+        </div>
+    </div>
+
+
+
+<!-- Scripts ------------------------------------------- -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

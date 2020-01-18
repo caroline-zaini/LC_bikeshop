@@ -1,0 +1,114 @@
+body{
+  font-family: 'Darker Grotesque', sans-serif;
+} 
+
+a, a:hover{
+  color: white
+}
+
+#picture-header {
+  background-image: url('/images/bike-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.card {
+margin-bottom: 20px;
+}
+.basket-img{
+  width: 170px;
+}
+
+/* Home Page */
+.jumbotron {
+  background-image: url(/images/bike-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+
+.navbar {
+  padding: 0px;
+  color: #FFFFFF;
+}
+
+.navbar:hover {
+  color: #FFFFFF;
+}
+
+.navbar:link {
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+/* Shop */
+
+.breadcrumb-item a{
+  color: blue;
+}
+
+.header-shop {
+  height: 40px;
+  padding-left: 20px;
+}
+
+.icon-basket {
+  margin-right: 5px;
+}
+
+.ariane {
+  margin-top: 25px;
+}
+
+.basket-img {
+  width: 100px;
+}
+
+.basket-item {
+  background-color: #F8F8F8;
+}
+
+.total-box {
+  font-weight: bold;
+}
+
+.btn-checkout {
+  font-weight: bold;
+}
+
+.empty-basket {
+  color: red;
+  font-style: italic;
+}
+
+/* The basket icon from the home page */
+.basket-icon {
+  margin-right: 10px;
+  color: white;
+}
+
+/* alert */
+#modal-area {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.5.8);
+  left: 0;
+  right: 0;
+ 
+}
+
+.modal-content {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 4px;
+
+}
