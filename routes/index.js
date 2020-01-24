@@ -168,9 +168,11 @@ router.post('/update-shop', async function(req, res, next) {
   // récupère la quantité du formulaire.
   var reqQuantity = req.body.quantity 
   console.log("quantité de dataCardBike " + req.session.dataCardBike[position].quantity)
+  
   // création d'une nouvelle propriété quantity dans l'objet dataCardBike.
   req.session.dataCardBike[position].quantity = reqQuantity
-
+  
+//////////////////////////////////////////////////////////////////////////////
   // for the Stripe payement
   var stripeCard = [];
 
