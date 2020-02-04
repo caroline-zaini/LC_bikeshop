@@ -11,3 +11,17 @@ This web site is a bikeshop, build with expressJS. The user can pay with the API
 ## Payement Page
 <img width="1064" alt="payementPage" src="https://user-images.githubusercontent.com/39524369/72667810-1130d980-3a20-11ea-98d6-311302b792e3.png">
 
+
+# To run the app localy :
+
+sudo npm install
+
+sudo npm install -g nodemon
+
+sudo npm install express-session --save 
+
+sudo npm install sync-request --save
+
+sudo npm install mongoose --save
+
+http://localhost:3000
